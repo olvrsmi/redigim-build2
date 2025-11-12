@@ -1,0 +1,65 @@
+.wrap{
+    flex-grow: 1;
+    margin: 0 auto;
+    max-width: 83.75rem;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 100%;
+}
+    .wrap p{
+        max-width: 46em;
+    }
+    .wrap h2{
+        font-size: 1rem;
+        margin-top: 0.25rem;
+    }
+
+.main{
+    flex-grow: 1;
+    position: relative;
+}
+
+.paneInfo{
+    padding: .55rem .75rem;
+    border-bottom: 1px solid black;
+}
+
+.paneMain{
+    position: relative;
+    flex-grow: 1;
+}
+
+.paneNav{
+    padding: 1rem 2rem 2rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (min-width: 1024px){
+     .wrap{
+        flex-direction: row;
+        position: relative;
+        max-width: 67rem;
+    }
+    .paneInfo{
+        border-right: 1px solid black;
+        width: 33%;
+        flex-shrink: 0;
+        border-bottom: none;
+    }
+    .paneNav{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 33%;
+        justify-content: center;
+        padding: 1rem 1rem 2rem 1rem;
+    }
+      
+    .paneMain{
+        flex-grow: 1;
+    }        
+}
