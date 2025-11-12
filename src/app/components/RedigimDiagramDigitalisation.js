@@ -86,7 +86,7 @@ export default function RedigimDiagramDigitalisation( {onSelect=()=>{}, ...props
             }}
           >
             <tspan x={401} y={287.854}>
-              {"Democratisation"}
+              {"Democratization"}
             </tspan>
           </text>        
           <path
