@@ -74,7 +74,7 @@ export default function RedigimDiagramDigitalisation( {onSelect=()=>{}, ...props
             fill="#000"
             d="M491 307.5h-.5v1h.5v-1Zm9.5 1a.5.5 0 0 0 0-1v1Zm-9.5-.5v.5h9.5v-1H491v.5Z"
           />
-        <g onClick={ () => { onSelect('democratisation') }}>
+        <g onClick={ () => { onSelect('democratization') }}>
           <text
             xmlSpace="preserve"
             fill="#000"
