@@ -70,7 +70,7 @@ export default function Redigim() {
           <nav className={styles.paneNav}>
             {((page + 1) < pages.length) ? 
               <RedigimButton 
-                title={`${pageData.button} (${page})`} 
+                title={`${pageData.button}`} 
                 onClick={() => {
                   const newPage = (page + 1) < pages.length ? page + 1 : page;
                   setPage( newPage )
