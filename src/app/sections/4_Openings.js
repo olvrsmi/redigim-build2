@@ -10,7 +10,7 @@ export function SectionOpeningsInfo(){
     return <>
         <h2>Alternative Imaginaries</h2>
         <p>
-            Redistributive imaginaries consolidate an emerging common sense about the role of private and civil sector actors in mixed economies of welfare, and claims about the affordances of the digital platforms tend to align with market-oriented visions of welfare provision. 
+            Redistributive imaginaries consolidate an emerging common sense about the role of private and civil sector actors in mixed economies of welfare. Claims about digital platforms tend to align with market-oriented visions of welfare provision.
         </p>
         <p>
             Yet we also found evidence of alternative ways of thinking, nurtured in a diversity of civil society initiatives across Europe.
@@ -43,13 +43,13 @@ export function SectionOpeningsMain() {
                 </cite>
             </blockquote> 
         </AccordionSection>
-        <AccordionSection title="Welfare Complementarity">
+        <AccordionSection title="Welfare Transnationalism">
             <blockquote>
                 <p>
-                    “For me personally, this is a part of prefigurative politics for a world where we don’t have a state and where we help each other out and make use of the abundant resources that there are, that just are being diverted off to a very small group of people.” 
+                    ‘People should be aware of how structural injustices are at play in our world. And how privileges are distributed in a grossly unfair manner. […] And to become aware of it and actively see oneself as part of it in order to be able to contribute to change. This can also be an expression of solidarity. […] I have a self-expectation of myself to be in solidarity and to promote it.’ 
                 </p>
                 <cite>
-                    Voluntary initiative member
+                    Voluntary initiative participant
                 </cite>
             </blockquote> 
         </AccordionSection>       

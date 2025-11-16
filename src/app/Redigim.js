@@ -78,7 +78,7 @@ export default function Redigim() {
               />
               :
               <RedigimButton 
-                title="See the full report"
+                title={`${pageData.button}`} 
                 href="https://example.com"
                 newTab
               />
