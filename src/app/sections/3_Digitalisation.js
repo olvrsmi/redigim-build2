@@ -44,17 +44,61 @@ const Panels = {
 
 export function SectionDigitalisationMain() {
     const [currentPanel, setCurrentpanel] = useState(false);
-
+    const possiblePanels = [
+        'democratization',
+        'transparency',
+        'visibility',
+        'aggregation'
+    ];
     return <>
         <RedigimDiagramDigitalisation onSelect={(which)=>{
-            if( Panels[ which ] ){
-                setCurrentpanel(Panels[which])
+            if(  possiblePanels.indexOf( which ) > -1 && which !== currentPanel ){
+                setCurrentpanel( which )
             } else {
                 setCurrentpanel( false );
             }
         }}/>
         <RedigimPanels>
-            { currentPanel ? currentPanel : <></> }
+            <RedigimPanelsPanel 
+                title="Democratization" 
+                isOpen={currentPanel==='democratization'}
+                onClose={() => { setCurrentpanel(false) }}
+            >
+                <blockquote>
+                    <p>"The whole framework and notion of what we’ve done is to create a more democratic solution where people are heard by their wallets."</p>
+                    <cite>For-profit platform representative</cite>
+                </blockquote>
+            </RedigimPanelsPanel>
+            <RedigimPanelsPanel 
+                title="Transparency" 
+                isOpen={currentPanel==='transparency'}
+                onClose={() => { setCurrentpanel(false) }}
+            >
+                <blockquote>
+                    <p>"Because we are all using the same platform and everything is there for people to see, it also helps [us to be] very transparent with how much money we are getting, where it is going, how it is being distributed and things like that."</p>
+                    <cite>Voluntary initiative member</cite>
+                </blockquote>
+            </RedigimPanelsPanel>
+            <RedigimPanelsPanel 
+                title="Visibility"
+                isOpen={currentPanel==='visibility'}
+                onClose={() => { setCurrentpanel(false) }}
+            >
+                <blockquote>
+                    <p>"Where we should make improvements is our visibility on social media. [Donors] react to ads that they see by chance […] You need to be in the right place at the right time."</p>
+                    <cite>Voluntary sector organization representative</cite>
+                </blockquote>
+            </RedigimPanelsPanel>
+            <RedigimPanelsPanel 
+                title="Aggregation" 
+                isOpen={currentPanel==='aggregation'}
+                onClose={() => { setCurrentpanel(false) }}
+            >
+                <blockquote>
+                    <p>"People often say, 'I alone can't make a difference'. […] But if they only knew how important one euro is – if everyone contributed just that small amount, the impact would be huge."</p>
+                    <cite>Voluntary sector organization representative</cite>
+                </blockquote>
+            </RedigimPanelsPanel>
         </RedigimPanels>
     </>
 }
