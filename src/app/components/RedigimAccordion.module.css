@@ -3,7 +3,7 @@
 }
 
 .panels{
-    position: absolute;
+    position: fixed;
     bottom: 0;    
 }
 
@@ -23,7 +23,7 @@
             width: 100%;
             transform: translateY(100%);
             transition: transform 0.25s cubic-bezier(0, 0, 0, 1);
-            padding-bottom: 1.75rem;
+            padding-bottom: 5.5rem;
             box-sizing: border-box;
         }
         .panelspanelOpen{
@@ -93,3 +93,13 @@
         .panel :last-child{
             margin-bottom: 0;
         }
+
+@media (min-width: 1024px){
+
+    .panels{
+        position: absolute;
+    }
+    .panelspanel{
+        padding-bottom: 1.75rem;
+    }
+}
