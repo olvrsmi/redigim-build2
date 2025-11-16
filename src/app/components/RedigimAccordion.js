@@ -12,10 +12,10 @@ export function AccordionSection( {title, children}){
               {title}
             </h3>
           }
-          // buttonProps={{
-          //   className: ({ isEnter }) =>
-          //     `${styles.itemBtn} ${isEnter && styles.itemBtnExpanded}`,
-          // }}
+          buttonProps={{
+            className: ({ isEnter }) =>
+              `${styles.itemBtn} ${isEnter && styles.itemBtnExpanded}`,
+          }}
           headingProps={{className: styles.header }}
           contentProps={{ className: styles.content }}
           panelProps={{ className: styles.panel }}

@@ -1,8 +1,8 @@
 import styles from "./RedigimAccordion.module.css";
 
-export function RedigimPanelsPanel( { title, children } ){
-return <div className={styles.panelspanel}>
-  <header className={styles.header}>
+export function RedigimPanelsPanel( { title, children, isOpen } ){
+return <div className={`${styles.panelspanel} ${(isOpen) ? styles.panelspanelOpen : ''}`}>
+  <header className={`${styles.header} ${styles.itemBtn} ${styles.itemBtnExpanded}`}>
     <h3>{title}</h3>
   </header>
   <div className={styles.content}>
