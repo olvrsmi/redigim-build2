@@ -30,7 +30,7 @@ export function RedigimAccordion( { children } ) {
     <Accordion 
       className={styles.accordion}
       transition 
-      transitionTimeout={250}
+      transitionTimeout={350}
     >
       {children}
     </Accordion>
