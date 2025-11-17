@@ -37,4 +37,6 @@
         position: relative;
         transition: transform .2s ease-in;
         width: 0.75em;
+        background-repeat: no-repeat;
+        background-position: center;
     }
