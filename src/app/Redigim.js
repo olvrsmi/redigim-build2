@@ -60,14 +60,14 @@ export default function Redigim() {
       />
       <main className={styles.main}>
         <article className={styles.wrap}>   
-          <aside className={styles.paneInfo}>
+          <aside className={[styles.paneInfo, styles.pane].join(' ')}>
             {pageData.info()}
           </aside>
-          <section className={styles.paneMain}>
+          <section className={[styles.paneMain, styles.pane].join(' ')}>
               {(pageData.type === 'diagram') ? <RedigimDiagramBase /> : ''}
               {pageData.main()}
           </section>
-          <nav className={styles.paneNav}>
+          <nav className={[styles.paneNav, styles.pane].join(' ')}>
             {((page + 1) < pages.length) ? 
               <RedigimButton 
                 title={`${pageData.button}`} 

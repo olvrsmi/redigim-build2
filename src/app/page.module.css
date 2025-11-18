@@ -22,6 +22,10 @@
     position: relative;
 }
 
+.pane{
+    box-sizing: border-box;
+}
+
 .paneInfo{
     padding: .55rem .75rem;
     border-bottom: 1px solid black;
@@ -52,7 +56,7 @@
     }
     .paneInfo{
         border-right: 1px solid black;
-        width: 33%;
+        width: 40%;
         flex-shrink: 0;
         border-bottom: none;
     }
