@@ -1,20 +1,48 @@
-.wrap{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    max-width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    z-index: 0;
-}
-    .wrap svg{
-        max-width: 130%;
-        width: 130%;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+
+@media (max-width: 1024px){
+    .wrap{
+        position: relative;
+        opacity: 1;
+        aspect-ratio: 8/7;
+        margin:0;
+        margin-top: 2rem;
+        padding:0;
+        z-index: 1;
     }
+    .wrap:first-child{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+        .wrap svg{
+            position: relative;
+            width: 130%;
+            aspect-ratio: 8/7;
+            height: auto;
+            left: -15%;
+        }
+}
+
+@media (min-width: 1024px){
+    .wrap{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        z-index: 0;
+    }
+        .wrap svg{
+            max-width: 130%;
+            width: 130%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        } 
+}
