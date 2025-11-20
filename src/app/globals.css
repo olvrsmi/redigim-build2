@@ -50,3 +50,7 @@ p{
 svg g{
     cursor: pointer;
 }
+
+button{
+    font-family: inherit;
+}
