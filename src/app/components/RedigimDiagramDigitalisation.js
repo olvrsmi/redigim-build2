@@ -1,7 +1,9 @@
 import RedigimDiagramWrap from "./RedigimDiagramWrap";
 
 export default function RedigimDiagramDigitalisation( {onSelect=()=>{}, ...props} ){
-    return <RedigimDiagramWrap>
+    return <RedigimDiagramWrap
+      caption="3 part venn diagram showing overlapping areas: Markets, Civil Society, and State with four features of digitalisation spreading through all areas: Democratization, Transparency, Aggregation, and Visibility."
+    >
      <svg
         xmlns="http://www.w3.org/2000/svg"
         width={800}

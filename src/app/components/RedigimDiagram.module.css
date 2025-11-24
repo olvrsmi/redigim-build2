@@ -1,4 +1,9 @@
 
+.wrap figcaption{
+    position: absolute;
+    top: 100vh;
+}
+
 @media (max-width: 1024px){
     .wrap{
         position: relative;

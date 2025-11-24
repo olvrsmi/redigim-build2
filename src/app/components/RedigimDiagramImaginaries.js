@@ -1,7 +1,9 @@
 import RedigimDiagramWrap from "./RedigimDiagramWrap";
 
 export default function RedigimDiagramImaginaries( {onSelect=()=>{}, ...props} ){
-    return <RedigimDiagramWrap>
+    return <RedigimDiagramWrap 
+            caption="3 part venn diagram showing overlapping areas: Markets, Civil Society, and State containing different imaginaries. In Civil Society: 'Welfare Transnationalism' and 'Community Empowerment'. In State, 'Welfare State Enhancement'. In Civil Society plus Markets: 'Welfare Consumerism' and 'Welfare Solutionism'. In Civil Society plus State: 'Welfare Complementarity'. In the intersection of all areas: 'Pragmatic Competition'"
+    >
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width={800}
