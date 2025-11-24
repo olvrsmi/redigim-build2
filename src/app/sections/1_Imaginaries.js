@@ -26,7 +26,7 @@ export function SectionImaginariesMain() {
         </AccordionSection>
         <AccordionSection title="Pragmatic Competition">
             <p>
-                It’s a tough and competitive world. Public resources are limited, and social initiatives must compete for the attention of potential donors and funders. Digital platforms enable small social initiatives to raise their public profile, but survival in this cause marketplace takes significant effort and expertise.
+                It’s a tough and competitive world. Public resources are limited, and social initiatives must compete for the attention of potential donors and funders. Digital platforms enable small initiatives to raise their public profile, but survival in this cause marketplace takes significant effort and expertise.
             </p>
         </AccordionSection>
         <AccordionSection title="Welfare Complementarity">
