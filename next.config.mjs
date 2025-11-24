@@ -2,8 +2,8 @@
 const nextConfig = {
   /* config options here */
   // output: 'export',
-  // distDir: 'findings',
-  // basePath: '/findings',
+  // distDir: 'imaginaries',
+  // basePath: '/imaginaries',
 };
 
 export default nextConfig;
