@@ -4,7 +4,7 @@ import { RedigimPanels, RedigimPanelsPanel } from "../components/RedigimPanels";
 import RedigimDiagramDigitalisation from "../components/RedigimDiagramDigitalisation";
 
 export const SectionDigitalisationType = 'diagram';
-export const SectionDigitalisationButtonText = 'Next: Alternative Imaginaries';
+export const SectionDigitalisationButtonText = 'Alternative Imaginaries';
 
 export function SectionDigitalisationInfo(){
     return <>

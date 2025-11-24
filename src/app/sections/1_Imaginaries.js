@@ -3,7 +3,7 @@ import {RedigimAccordion, AccordionSection} from "../components/RedigimAccordion
 
 export const SectionImaginariesType = 'accordion';
 
-export const SectionImaginariesButtonText = 'Next: A Mixed Economy';
+export const SectionImaginariesButtonText = 'A Mixed Economy';
 
 export function SectionImaginariesInfo(){
     return <>

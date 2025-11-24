@@ -9,7 +9,7 @@ import RedigimDiagramImaginaries from "../components/RedigimDiagramImaginaries";
 
 export const SectionDiagramType = 'diagram';
 
-export const SectionDiagramButtonText = 'Next: Digital Platforms';
+export const SectionDiagramButtonText = 'Digital Platforms';
 
 export function SectionDiagramInfo(){
     return <>
