@@ -79,7 +79,7 @@ export default function Redigim() {
               :
               <RedigimButton 
                 title={`${pageData.button}`} 
-                href="https://example.com"
+                href="https://redigim.arts.ac.uk/publications/"
                 newTab
               />
             }
