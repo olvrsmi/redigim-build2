@@ -46,7 +46,7 @@ export function SectionImaginariesMain() {
         </AccordionSection>
         <AccordionSection title="Welfare State Enhancement">
             <p>
-              In an ideal world, charities wouldn't exist. Social needs aren't being met, and charities are forced to provide temporary relief. But it isn’t enough – only the state has the capacity to deal with problems of this scale. Tax reform could provide the funds to deliver better welfare provision for everyone. 
+              In an ideal world, charities wouldn’t exist. Social needs aren’t being met, and charities are forced to provide temporary relief. But it isn’t enough – only the state has the capacity to deal with problems of this scale. Tax reform could provide the funds to deliver better welfare provision for everyone. 
             </p>
         </AccordionSection>
         <AccordionSection title="Welfare Transnationalism">

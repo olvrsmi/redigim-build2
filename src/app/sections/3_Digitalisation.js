@@ -71,7 +71,7 @@ export function SectionDigitalisationMain() {
                 onClose={() => { setCurrentpanel(false) }}
             >
                 <blockquote>
-                    <p>‘People often say, “I alone can't make a difference”. […] But if they only knew how important one euro is – if everyone contributed just that small amount, the impact would be huge.’</p>
+                    <p>‘People often say, “I alone can’t make a difference”. […] But if they only knew how important one euro is – if everyone contributed just that small amount, the impact would be huge.’</p>
                     <cite>Voluntary sector organization representative</cite>
                 </blockquote>
             </RedigimPanelsPanel>
