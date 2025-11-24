@@ -1,8 +1,15 @@
 import styles from "./RedigimAccordion.module.css";
 
 export function RedigimPanelsPanel( { title, children, isOpen, onClose=()=>{} } ){
-return <div className={`${styles.panelspanel} ${(isOpen) ? styles.panelspanelOpen : ''}`}>
-  <header className={`${styles.header} ${styles.itemBtn} ${styles.itemBtnExpanded}`} onClick={() => { onClose() }}>
+return <div 
+  className={`${styles.panelspanel} ${(isOpen) ? styles.panelspanelOpen : ''}`}
+  aria-hidden={!isOpen}
+>
+  <header 
+    tabIndex={(isOpen) ? 0 : -1}
+    className={`${styles.header} ${styles.itemBtn} ${styles.itemBtnExpanded}`} 
+    onClick={() => { onClose() }}
+  >
     <h3>{title}</h3>
   </header>
   <div className={styles.content}>
