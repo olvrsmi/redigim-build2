@@ -10,7 +10,12 @@ export default function RedigimDiagramDigitalisation( {onSelect=()=>{}, ...props
         fill="none"
         {...props}
       >
-        <g onClick={ () => { onSelect('visibility') }}>
+        <g 
+          onClick={ () => { onSelect('visibility') }}
+          onKeyDown={(e) => { if (e.key === 'Enter') onSelect( 'visibility' ); }}
+          tabIndex="0" 
+          role="button"
+        >
           <path
             fill="#000"
             d="M393 358.5h.5v-1h-.5v1ZM254.351 19.349a.5.5 0 1 0-.702-.712l.351.356.351.356ZM393 358v-.5c-109.076 0-197.5-88.424-197.5-197.5h-1c0 109.629 88.871 198.5 198.5 198.5v-.5ZM195 160h.5c0-55.047 22.52-104.834 58.851-140.651l-.351-.356-.351-.356C217.135 54.634 194.5 104.674 194.5 160h.5Z"
@@ -30,7 +35,12 @@ export default function RedigimDiagramDigitalisation( {onSelect=()=>{}, ...props
             </tspan>
           </text>
         </g>     
-        <g onClick={ () => { onSelect('aggregation') }}>
+        <g 
+          onClick={ () => { onSelect('aggregation') }}
+          onKeyDown={(e) => { if (e.key === 'Enter') onSelect( 'aggregation' ); }}
+          tabIndex="0" 
+          role="button"
+        >
           <path
             fill="#000"
             d="M456 357.5h-.5v1h.5v-1Zm9 1a.5.5 0 0 0 0-1v1Zm-9-.5v.5h9v-1h-9v.5ZM393 333.5h.5v-1h-.5v1ZM271.696 37.356a.5.5 0 1 0-.703-.712l.352.356.351.355ZM393 333v-.5c-95.269 0-172.5-77.231-172.5-172.5h-1c0 95.821 77.679 173.5 173.5 173.5v-.5ZM220 160h.5c0-47.976 19.585-91.376 51.196-122.644l-.351-.356-.352-.355C239.199 68.093 219.5 111.745 219.5 160h.5Z"
@@ -50,7 +60,12 @@ export default function RedigimDiagramDigitalisation( {onSelect=()=>{}, ...props
             </tspan>
           </text>
         </g> 
-        <g onClick={ () => { onSelect('transparency') }}>
+        <g 
+          onClick={ () => { onSelect('transparency') }}
+          onKeyDown={(e) => { if (e.key === 'Enter') onSelect( 'transparency' ); }}
+          tabIndex="0" 
+          role="button"
+        >
           <path
             fill="#000"
             d="M481 332.5h-.5v1h.5v-1Zm9 1a.5.5 0 0 0 0-1v1Zm-9-.5v.5h9v-1h-9v.5ZM393 308.5h.5v-1h-.5v1ZM289.351 55.056a.5.5 0 1 0-.702-.711l.351.355.351.356ZM393 308v-.5c-81.462 0-147.5-66.038-147.5-147.5h-1c0 82.014 66.486 148.5 148.5 148.5v-.5ZM245 160h.5c0-41.06 16.777-78.202 43.851-104.944L289 54.7l-.351-.355C261.392 81.267 244.5 118.66 244.5 160h.5Z"
@@ -74,7 +89,12 @@ export default function RedigimDiagramDigitalisation( {onSelect=()=>{}, ...props
             fill="#000"
             d="M491 307.5h-.5v1h.5v-1Zm9.5 1a.5.5 0 0 0 0-1v1Zm-9.5-.5v.5h9.5v-1H491v.5Z"
           />
-        <g onClick={ () => { onSelect('democratization') }}>
+        <g 
+          onClick={ () => { onSelect('democratization') }}
+          onKeyDown={(e) => { if (e.key === 'Enter') onSelect( 'democratization' ); }}
+          tabIndex="0" 
+          role="button"
+        >
           <text
             xmlSpace="preserve"
             fill="#000"
