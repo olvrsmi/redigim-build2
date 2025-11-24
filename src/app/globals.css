@@ -38,6 +38,10 @@ p{
     blockquote p{
         margin-bottom: 0.2em;
     }
+    blockquote cite{
+        margin-top: 0.4em;
+        display: block;
+    }
     blockquote cite:before{
         content: '—';
     }
