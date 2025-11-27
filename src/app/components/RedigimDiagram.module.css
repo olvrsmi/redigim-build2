@@ -1,6 +1,6 @@
 
 .wrap figcaption{
-    position: absolute;
+    position: fixed;
     top: 100vh;
 }
 
