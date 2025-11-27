@@ -60,7 +60,7 @@ export function SectionDiagramMain() {
             </RedigimPanelsPanel>
             <RedigimPanelsPanel title="Welfare Consumerism" isOpen={currentPanel==='welfareconsumerism'} onClose={() => { setCurrentpanel(false) }}>
                 <blockquote>
-                    <p>‘I believe we are moving toward a public-private combination model where our taxes cover a certain extent […] However, to go a little further, the private sector comes into play, allowing us to choose where we want our money to go. And that, too, is something very beautiful.’</p>
+                    <p>‘I believe we are moving toward a public-private combination model where our taxes cover a certain extent […]. However, to go a little further, the private sector comes into play, allowing us to choose where we want our money to go. And that, too, is something very beautiful.’</p>
                     <cite>Non-profit platform representative</cite>
                 </blockquote>
             </RedigimPanelsPanel>
