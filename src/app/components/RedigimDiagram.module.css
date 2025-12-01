@@ -19,6 +19,13 @@
 }
 
 @media (max-width: 1024px){
+    @keyframes wiggle {
+    0%  { transform: translateY(0); }
+        25% { transform: translateY(-0.4rem); }
+        50%{ transform: translateY(0); }
+        75% { transform: translateY(-0.25rem); }
+        100% { transform: translateY(0); } 
+    }
     .wrap{
         position: relative;
         opacity: 1;
@@ -44,6 +51,13 @@
 }
 
 @media (min-width: 1024px){
+    @keyframes wiggle {
+        0%  { transform: translateY(0); }
+        25% { transform: translateY(-0.15rem); }
+        50%{ transform: translateY(0); }
+        75% { transform: translateY(-0.08rem); }
+        100% { transform: translateY(0); } 
+    }
     .wrap{
         position: absolute;
         top: 50%;
