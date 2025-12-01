@@ -1,6 +1,7 @@
 "use client"
 
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { animateScroll, Events as ScrollEvents } from "react-scroll";
 
 import styles from "./page.module.css";
 
@@ -41,31 +42,58 @@ const pages = [
   }
 ]
 
+const LoadingPlaceholder = ()=>{
+    const [basicState, setBasicState] = useState();
+    return <div style={{height: '100vh'}}></div>
+}
+
 
 export default function Redigim() {
-  const [page, setPage] = useState( 0 )
+  const [page, setPage] = useState( 0 );
+  const [isLoading, setIsloading] = useState( false );
 
   const pageData = pages[page];
+
+  const runScroll = function(){
+    if( document.body.scrollHeight <= document.body.clientHeight || (document.scrollingElement.scrollTop > 85 && document.scrollingElement.scrollTop < 95)){
+      return;
+    }
+    setIsloading(true);
+
+    const scrollToTop = new Promise((resolve,reject) => {
+      ScrollEvents.scrollEvent.register('end', () => {
+        resolve( true );
+        ScrollEvents.scrollEvent.remove('end');
+      })
+      animateScroll.scrollTo(90);
+    })
+
+    scrollToTop.then(() => {
+      setIsloading(false);
+    })
+  }
 
   return (
     <>
       <RedigimHeader />
-      <RedigimBreadcrumb 
+      <RedigimBreadcrumb
+        id="redigim-breadcrumb"
         page={page}
         onChange={( pageIndex) => {
           if( pageIndex < pages.length ){
             setPage( pageIndex );
+            runScroll();
           }
         }}
       />
-      <main className={styles.main}>
+      <main className={`${styles.main} ${(isLoading)? styles.mainLoading : ''}`}>
         <article className={styles.wrap}>   
           <aside className={[styles.paneInfo, styles.pane].join(' ')}>
-            {pageData.info()}
+            {(!isLoading) ? pageData.info() : ''}
           </aside>
           <section className={[styles.paneMain, styles.pane].join(' ')}>
-              {(pageData.type === 'diagram') ? <RedigimDiagramBase /> : ''}
-              {pageData.main()}
+              {(pageData.type === 'diagram' && !isLoading) ? <RedigimDiagramBase /> : ''}
+              {(!isLoading) ? pageData.main() : LoadingPlaceholder()}
           </section>
           <nav className={[styles.paneNav, styles.pane].join(' ')}>
             {((page + 1) < pages.length) ? 
@@ -73,7 +101,8 @@ export default function Redigim() {
                 title={`${pageData.button}`} 
                 onClick={() => {
                   const newPage = (page + 1) < pages.length ? page + 1 : page;
-                  setPage( newPage )
+                  setPage( newPage );
+                  runScroll();
                 }}
               />
               :
