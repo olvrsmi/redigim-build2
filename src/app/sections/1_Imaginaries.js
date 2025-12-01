@@ -18,7 +18,7 @@ export function SectionImaginariesMain() {
     const [basicState, setBasicState] = useState();
   return (
    <>
-    <RedigimAccordion>       
+    <RedigimAccordion loc={"imaginaries"}>       
          <AccordionSection title="Community Empowerment">
             <p>
               People are naturally inclined to help, and they want to donate to causes that will improve the lives of people in their communities. Voluntary giving helps to reinforce social bonds, creating more resilient communities. Digital innovation unlocks latent potential by activating communities and helping them to get going.

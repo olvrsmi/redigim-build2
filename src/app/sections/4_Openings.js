@@ -22,7 +22,7 @@ export function SectionOpeningsMain() {
     const [basicState, setBasicState] = useState();
   return (
    <>
-    <RedigimAccordion>
+    <RedigimAccordion loc={"openings"}>
         <AccordionSection title="Community Empowerment">
             <blockquote>
                 <p>
