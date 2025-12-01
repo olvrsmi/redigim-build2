@@ -4,6 +4,20 @@
     top: 100vh;
 }
 
+@keyframes wiggle {
+    0%  { transform: translateY(0); }
+    25% { transform: translateY(-0.3rem); }
+    50%{ transform: translateY(0); }
+    75% { transform: translateY(-0.3rem); }
+    100% { transform: translateY(0); } 
+}
+
+
+.wrap g[role="button"]:last-of-type text,
+.wrap g[role="button"][class^="imaginaries-"]:last-of-type path{
+    animation: wiggle .9s cubic-bezier(.36,.07,.19,.97) 1;
+}
+
 @media (max-width: 1024px){
     .wrap{
         position: relative;
