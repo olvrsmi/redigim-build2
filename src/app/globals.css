@@ -58,3 +58,11 @@ svg g{
 button{
     font-family: inherit;
 }
+
+[role="button"]{
+    outline: none;
+}
+    [role="button"]:focus-visible text{
+        outline: 2px solid blue;
+
+    }
