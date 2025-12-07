@@ -61,7 +61,7 @@
 
             }
             .itemBtnExpanded:after{
-                content: "-";
+                content: "–";
             }
             
                 .panelspanel .itemBtn:after{
