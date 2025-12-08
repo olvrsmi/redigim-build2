@@ -112,8 +112,11 @@ export default function Redigim() {
                 newTab
               />
             }
-          </nav>        
+          </nav>            
         </article>
+        <div className={styles.credit}>
+            design, build: <a href="https://oliversmith.cc" target="_blank">Oliver Smith</a>
+          </div>      
       </main>
     </>
   );
