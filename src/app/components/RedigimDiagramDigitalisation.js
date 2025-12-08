@@ -14,7 +14,7 @@ export default function RedigimDiagramDigitalisation( {onSelect=()=>{}, ...props
       >
         <g 
           onClick={ () => { onSelect('visibility') }}
-          onKeyDown={(e) => { if (e.key === 'Enter') onSelect( 'visibility' ); }}
+          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onSelect( 'visibility' ); }}
           tabIndex="0" 
           role="button"
         >
@@ -39,7 +39,7 @@ export default function RedigimDiagramDigitalisation( {onSelect=()=>{}, ...props
         </g>     
         <g 
           onClick={ () => { onSelect('aggregation') }}
-          onKeyDown={(e) => { if (e.key === 'Enter') onSelect( 'aggregation' ); }}
+          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onSelect( 'aggregation' ); }}
           tabIndex="0" 
           role="button"
         >
@@ -64,7 +64,7 @@ export default function RedigimDiagramDigitalisation( {onSelect=()=>{}, ...props
         </g> 
         <g 
           onClick={ () => { onSelect('transparency') }}
-          onKeyDown={(e) => { if (e.key === 'Enter') onSelect( 'transparency' ); }}
+          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onSelect( 'transparency' ); }}
           tabIndex="0" 
           role="button"
         >
@@ -93,7 +93,7 @@ export default function RedigimDiagramDigitalisation( {onSelect=()=>{}, ...props
           />
         <g 
           onClick={ () => { onSelect('democratization') }}
-          onKeyDown={(e) => { if (e.key === 'Enter') onSelect( 'democratization' ); }}
+          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onSelect( 'democratization' ); }}
           tabIndex="0" 
           role="button"
         >

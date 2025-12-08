@@ -15,7 +15,7 @@ export default function RedigimDiagramImaginaries( {onSelect=()=>{}, ...props} )
             <g 
                 className="imaginaries-welfarestateenhancement" 
                 onClick={() => { onSelect( 'welfarestateenhancement' ) }}
-                onKeyDown={(e) => { if (e.key === 'Enter') onSelect( 'welfarestateenhancement' ); }}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onSelect( 'welfarestateenhancement' ); }}
                 tabIndex="0" 
                 role="button"
             >
@@ -41,7 +41,7 @@ export default function RedigimDiagramImaginaries( {onSelect=()=>{}, ...props} )
             <g 
                 className="imaginaries-welfarecomplementarity" 
                 onClick={() => { onSelect( 'welfarecomplementarity' ) }}
-                onKeyDown={(e) => { if (e.key === 'Enter') onSelect( 'welfarecomplementarity' ); }}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onSelect( 'welfarecomplementarity' ); }}
                 tabIndex="0" 
                 role="button"
             >
@@ -67,7 +67,7 @@ export default function RedigimDiagramImaginaries( {onSelect=()=>{}, ...props} )
             <g 
                 className="imaginaries-pragmaticcompetition" 
                 onClick={() => { onSelect( 'pragmaticcompetition' ) }}
-                onKeyDown={(e) => { if (e.key === 'Enter') onSelect( 'pragmaticcompetition' ); }}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onSelect( 'pragmaticcompetition' ); }}
                 tabIndex="0" 
                 role="button"
             >
@@ -93,7 +93,7 @@ export default function RedigimDiagramImaginaries( {onSelect=()=>{}, ...props} )
             <g 
                 className="imaginaries-welfaresolutionism" 
                 onClick={() => { onSelect( 'welfaresolutionism' ) }}
-                onKeyDown={(e) => { if (e.key === 'Enter') onSelect( 'welfaresolutionism' ); }}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onSelect( 'welfaresolutionism' ); }}
                 tabIndex="0" 
                 role="button"
             >
@@ -119,7 +119,7 @@ export default function RedigimDiagramImaginaries( {onSelect=()=>{}, ...props} )
             <g 
                 className="imaginaries-welfareconsumerism" 
                 onClick={() => { onSelect( 'welfareconsumerism' ) }}
-                onKeyDown={(e) => { if (e.key === 'Enter') onSelect( 'welfareconsumerism' ); }}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onSelect( 'welfareconsumerism' ); }}
                 tabIndex="0" 
                 role="button"
             >
@@ -145,7 +145,7 @@ export default function RedigimDiagramImaginaries( {onSelect=()=>{}, ...props} )
             <g 
                 className="imaginaries-communityempowerment" 
                 onClick={() => { onSelect( 'communityempowerment' ) }}
-                onKeyDown={(e) => { if (e.key === 'Enter') onSelect( 'communityempowerment' ); }}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onSelect( 'communityempowerment' ); }}
                 tabIndex="0" 
                 role="button"
             >
@@ -171,7 +171,7 @@ export default function RedigimDiagramImaginaries( {onSelect=()=>{}, ...props} )
             <g 
                 className="imaginaries-welfaretransnationalism" 
                 onClick={() => { onSelect( 'welfaretransnationalism' ) }}
-                onKeyDown={(e) => { if (e.key === 'Enter') onSelect( 'welfaretransnationalism' ); }}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onSelect( 'welfaretransnationalism' ); }}
                 tabIndex="0" 
                 role="button"
             >
